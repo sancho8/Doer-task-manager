@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Personal task-manager</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="bootstrap-social/bootstrap-social.css">
+	<link href="style.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+		<header class="row">
+			<nav class="navbar">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<p class="navbar-brand">Task-manager</p>
+					</div>
+				<ul class="nav navbar-nav">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="tasks.html">Tasks</a></li>
+					<li><a href="abouv.html">About</a></li> 
+					<li class="active"><a href="#">Contacts</a></li> 
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li data-toggle="modal" data-target="#myModal"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li data-toggle="modal" data-target="#login_modal"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+				</div>
+			</nav>
+			<div class="col-md-3 col-sm-4 col-xs-12 col-lg-3">
+				<img src="#" id="logo" alt="logo"/>
+			</div>
+			<div class="col-md-6 col-sm-4 col-xs-12 col-lg-6">
+					<h1>Lite task manager</h1>
+					<h3>Easily service to manage your tasks</h3>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-12 col-lg-3" id="auth_box">
+				<a class="btn btn-social-icon btn-facebook">
+					<span class="fa fa-facebook"></span>
+				</a>
+				<a class="btn btn-social-icon btn-twitter">
+					<span class="fa fa-twitter"></span>
+				</a>
+				<a class="btn btn-social-icon btn-vk">
+					<span class="fa fa-vk"></span>
+				</a>
+				<a class="btn btn-social-icon btn-odnoklassniki">
+					<span class="fa fa-odnoklassniki"></span>
+				</a>
+				<a class="btn btn-social-icon btn-google">
+					<span class="fa fa-google"></span>
+				</a>
+				<p>Sign in by your favourite social network</p>
+			</div>
+			
+		</header>
+		
+		<section class="row">
+			<form class="form-horizontal" id="contact_form">
+				<h4 id="contact_form_header">Contact us</h4>
+				<div class="form-group">
+					<label class="control-label col-sm-2">Your name:</label>
+					<div class="col-sm-10"> 
+					<input class="input-lg col-sm-10 col-xs-10 col-lg-10" type="text" placeholder="Enter name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">Email:</label>
+					<div class="col-sm-10">
+					<input class="input-lg col-sm-10 col-xs-10 col-lg-10" type="email" placeholder="Enter email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2">Your phone:</label>
+					<div class="col-sm-10"> 
+					<input class="input-lg col-sm-10 col-xs-10 col-lg-10" type="tel" placeholder="Enter phone">
+					</div>
+				</div>
+				<div class="form-group"> 
+					<label class="control-label col-sm-2" >Your feedback:</label>
+					<div class="col-sm-10">
+					<div class="textarea">
+						<textarea class="input-lg col-sm-10 col-xs-10 col-lg-10" rows="5">Enter your message here...</textarea>
+					</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-2" >File input:</label>
+					<div class="col-sm-10">
+					<input class="input-lg col-sm-10 col-xs-10 col-lg-10" type="file">
+					</div>
+					</div>
+				<div class="form-group"> 
+					<div class="col-sm-offset-2 col-sm-10">
+					<button class="button-lg btn btn-primary btn-md" type="submit">Send</button>
+					</div>
+				</div>
+			</form>
+				
+		</section>
+		
+		<footer class="row navbar-inverse"> 
+			<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 contact-info">
+				Contacts: 98sancho@ukr.net +380507773795
+			</div>
+			<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 copyright">
+				© Created by Oleksandr Yaroshenko | CA "Step" 2016
+			</div>
+		</footer>
+		
+		
+		<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Registration</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal contact_form">
+						<div style="font-size: 24px; text-align:center" class="reg_form_header">Enter data</div>
+							<div class="form-group">
+								<label class="control-label col-sm-4">Login:</label>
+								<div class="col-sm-8"> 
+									<input type="password" class="form-control" placeholder="Enter your login">
+								</div>
+							</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4">Email:</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" placeholder="Enter your email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4">Password:</label>
+							<div class="col-sm-8">
+								<input type="password" class="form-control" placeholder="Enter your password">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4">Confirm password:</label>
+							<div class="col-sm-8">
+								<input type="password" class="form-control" style="margin-top:5px" placeholder="Confirm your password">
+							</div>
+						</div>
+					</form>				
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Registry</button>
+				</div>
+				</div>
+			</div>
+			</div>
+							
+							
+			<div class="modal fade" id="login_modal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" >Login</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal contact_form">
+						<div style="font-size: 24px; text-align:center" class="reg_form_header">Enter data</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2">Login:</label>
+								<div class="col-sm-10"> 
+									<input type="password" class="form-control" placeholder="Enter your login">
+								</div>
+							</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2">Password:</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" placeholder="Enter your password">
+							</div>
+						</div>
+					</form>				
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Login</button>
+				</div>
+				</div>
+			</div>
+			</div>
+					
+			<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+			<script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

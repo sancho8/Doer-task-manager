@@ -1,0 +1,51 @@
+* {
+	border: 2px solid blue;
+}
+body {
+	border: none;
+}
+html {
+	border: none;
+}
+header {
+	width: 960px;
+	height: 200px;
+	margin-left: auto;
+    margin-right: auto;
+}
+footer {
+	width: 960px;
+	height: 120px;
+	margin-left: auto;
+    margin-right: auto;
+}
+section {
+	width: 960px;
+	height: 520px;
+	margin-left: auto;
+    margin-right: auto;
+}
+hgroup {
+	margin-left: auto;
+    margin-right: auto;
+	height: auto;
+	width: 480px;
+}
+#logo_bar {
+	margin: 5px 5px 0px 5px;
+	height: 120px;
+	width: auto;
+}
+#authentication_bar {
+	float: right;
+	margin: 5px;
+}
+h1 {
+	font-size: 24px;
+}
+nav {
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 10px;
+	width: 420px;
+}
